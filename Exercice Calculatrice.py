@@ -1,5 +1,6 @@
 # Créer une calculatrice d'IMC demandant à l'utilisateur sa grandeur(en mètres), son poids(en kg).
 # Retournez ensuite la catégorie dans laquelle se trouve la personne.
+#go
 
 import math
 
