@@ -4,27 +4,37 @@
 import math
 
 def calcul_imc():
-    Taille=input("Veuillez entrer votre taille en metre: ")
-    Poids=("Veuillez entrer votre poids en kg: ")
-    return Poids / Taille**2
 
-    if calcul_imc() < 18.5 :
+    taille = float(input("Veuillez entrer votre taille en metre: "))
+    poids = int(input("Veuillez entrer votre poids en kg: "))
+    
+    return poids / taille**2
+
+def imc(resultat):
+    if resultat < 18.5 :
         print("Votre categorie IMC est Poids Insuffisant")
     
-    elif Calcul_Imc <= 24.9 :
+    elif resultat <= 24.9 :
         print("Votre categorie IMC est Poids Normal")
     
-    elif Calcul_Imc <= 29.9 :
+    elif resultat <= 29.9 :
         print("Votre categorie IMC est Embonpoint")
     
-    elif Calcul_Imc <= 34.9 :
+    elif resultat <= 34.9 :
         print("Votre categorie IMC est Embonpoint")
 
-    elif Calcul_Imc <= 39.9 :
+    elif resultat <= 39.9 :
         print("Votre categorie IMC est Embonpoint")
     
-    elif Calcul_Imc >= 40.0 :
+    elif resultat >= 40.0 :
         print("Votre categorie IMC est Embonpoint")
+    
+    return None
+
+x=calcul_imc()
+imc(x)
+
+
 
 
     
