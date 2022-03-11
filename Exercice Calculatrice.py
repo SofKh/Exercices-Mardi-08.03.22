@@ -26,7 +26,7 @@ def imc(resultat):
     elif resultat <= 39.9 :
         print("Votre categorie IMC est Embonpoint")
     
-    elif resultat >= 40.0 :
+    elif resultat >= 40.0 : # don't have to write > = 40, just put else: is enough.
         print("Votre categorie IMC est Embonpoint")
     
     return None
